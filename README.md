@@ -1,15 +1,12 @@
-# Publish-to-ArcGIS
-###Publish your SPSS analysis to Esri ArcGIS platform.
+# Get Coordinates with Esri geocoding service
+###Get the latitude and the longitude of a location in IBM SPSS Modeler using Esri services 
 
-Map your IBM SPSS data in Esri® ArcGIS Online.   Export, transfer, load, your data for map visualization and deeper geospatial analytics.   This node relies on the Requests API. 
 
 ![Map](https://raw.githubusercontent.com/IBMPredictiveAnalytics/Get-Coordinates-Esri/master/Screenshot/Illustration1.png)
-![Map](https://raw.githubusercontent.com/IBMPredictiveAnalytics/Get-Coordinates-Esri/master/Screenshot/Illustration3.PNG)
 ![Map](https://raw.githubusercontent.com/IBMPredictiveAnalytics/Get-Coordinates-Esri/master/Screenshot/Illustration2.png)
+![Map](https://raw.githubusercontent.com/IBMPredictiveAnalytics/Get-Coordinates-Esri/master/Screenshot/Illustration3.png)
 
-Check some live demos here:
-- [Geospatial Analysis on Twitter Data in the Esri Dev Summit 2015][10]
-- [Visualization of Crime Prediction ][12]
+
 
 ---
 Requirements
@@ -34,8 +31,7 @@ R Packages used
 The R packages will be installed the first time the node is used as long as an Internet connection is available.
 - [RCurl][4]
 - [plyr][11]
-- [httr][13]
-- [rjson][14]
+- [RJSONIO’ ][13]
 
 ---
 Documentation and samples
@@ -59,13 +55,12 @@ Contributors
 
 [1]: http://www.apache.org/licenses/LICENSE-2.0.html
 [2]:https://developer.ibm.com/predictiveanalytics/downloads/#tab2
-[3]:https://github.com/IBMPredictiveAnalytics/PlotGeospatialData/raw/master/Source%20code/plotSpatialData.cfe
+[3]:https://github.com/IBMPredictiveAnalytics/Get-Coordinates-Esri/raw/master/Source%20code/GeocodingESRI.cfe
 [4]:https://cran.r-project.org/web/packages/RCurl/
-[5]:https://github.com/IBMPredictiveAnalytics/PlotGeospatialData/blob/master/Documentation/PlotSpatialData-SPSSModelerExtension.pdf
-[6]:https://github.com/IBMPredictiveAnalytics/PlotGeospatialData/tree/master/Example
+[5]:https://github.com/IBMPredictiveAnalytics/Get-Coordinates-Esri/raw/master/Documentation/Geocoding-SPSSModelerExtension.pdf
+[6]:https://github.com/IBMPredictiveAnalytics/Get-Coordinates-Esri/tree/master/Example
 [10]:https://developer.ibm.com/predictiveanalytics/2015/03/11/tweets-during-esri-dev-summit-and-bnp-paribas-open/
 [11]:https://cran.r-project.org/web/packages/plyr/
 [12]:https://developer.ibm.com/predictiveanalytics/2015/03/11/crime-prediction-using-ibm-spss-modeler-and-arcgis/
-[13]:https://cran.r-project.org/web/packages/httr/
-[14]:https://cran.r-project.org/web/packages/rjson/
-[20]:https://www.youtube.com/watch?v=M__XUbiWf30
+[13]:https://cran.r-project.org/web/packages/RJSONIO/index.html
+[20]:https://www.youtube.com/watch?v=5VpnKVsoxjI
