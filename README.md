@@ -1,5 +1,5 @@
-# Get Coordinates with Esri geocoding service
-###Get the latitude and the longitude of a location in IBM SPSS Modeler using Esri services 
+# Get Coordinates with Esri
+Get the latitude and the longitude of a location in IBM SPSS Modeler using Esri services 
 
 
 ![Map](https://raw.githubusercontent.com/IBMPredictiveAnalytics/Get-Coordinates-Esri/master/Screenshot/Illustration1.png)
