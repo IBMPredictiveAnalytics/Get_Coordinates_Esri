@@ -1,3 +1,18 @@
+# Install function for packages (automatic)
+packages <- function(x){
+  x <- as.character(match.call()[[2]])
+  if (!require(x,character.only=TRUE)){
+    install.packages(pkgs=x,repos="http://cran.r-project.org")
+    require(x,character.only=TRUE)
+  }
+}
+
+
+# Required packages
+packages(plyr)
+packages(RCurl)
+packages(RJSONIO)
+packages(bitops)
 library(RCurl)
 library(RJSONIO)
 library(httr)
@@ -20,7 +35,7 @@ u <- gsub(' ','%20',u) #Encode URL Parameters
 print(u)
 require("plyr")
 doc <- aaply(u,1,getURL)
- json <- alply(doc,1,fromJSON,simplify = FALSE)
+json <- alply(doc,1,fromJSON,simplify = FALSE)
 coord = laply(json,function(x) {
    
       lat <- x$locations[[1]]$feature$geometry$x
@@ -28,8 +43,13 @@ coord = laply(json,function(x) {
       return(c(lat,lng))
    
   })
+
+if (is.null(nrow(coord))){
+lng<-c(coord[1])
+lat<-c(coord[2]) } else{
 lng<-c(coord[,1])
-lat<-c(coord[,2])
+lat<-c(coord[,2])}
+
 modelerData<-cbind(modelerData,lat)
 print(modelerData)
 var1<-c(fieldName="Latitude",fieldLabel="",fieldStorage="real",fieldFormat="",fieldMeasure="",  fieldRole="")
